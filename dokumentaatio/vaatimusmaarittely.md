@@ -10,7 +10,7 @@ Sovelluksessa ei ole erilaisia käyttäjärooleja.
 
 ## Käyttöliittymä
 
-Sovellukseen tulee noin 3-4 näkymää. Yksi kirjautumiselle, yksi käyttäjätunnuksen luomiselle, yksi näkymä, josta voi aloittaa pelin sekä yksi näkymä ristinollan pelaamiselle. 
+Sovellukseen tulee noin neljä näkymää: yksi käyttäjätunnuksen luomiselle, yksi kirjautumiselle, yksi näkymä, josta voi aloittaa pelin sekä näkymä itse ristinollan pelaamiselle.
 
 ## Toiminnallisuus
 

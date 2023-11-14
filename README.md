@@ -7,3 +7,6 @@ https://github.com/xcvbnmas/ot-harjoitustyo/tree/master/laskarit
 
 Linkki vaatimusmaarittely.md-tiedostoon:
 https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md
+
+Linkki työaikakirjanpitotiedostoon:
+https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md

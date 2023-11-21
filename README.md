@@ -1,12 +1,14 @@
 # Ohjelmistotekniikka, harjoitustyö
 
-**Aion** *tehdä* jonkinlaisen ristinolla-pelin tämän kurssin aikana.
+## Ristinolla-peli
+Sovellus on tarkoitettu yksinkertaisen ristinolla-pelin pelaamiseen.
 
-Linkki hakemistoon *laskarit*:
-https://github.com/xcvbnmas/ot-harjoitustyo/tree/master/laskarit
 
-Linkki vaatimusmaarittely.md-tiedostoon:
-https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md
 
-Linkki työaikakirjanpitotiedostoon:
-https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md
+
+
+[Vaatimusmäärittely](https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[Työaikakirjanpito](https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+
+[Changelog](https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)

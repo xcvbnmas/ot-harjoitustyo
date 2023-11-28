@@ -2,3 +2,8 @@
 
 - Sovellukseen on toteutettu ruudukko ristinolla-peliä varten
 - Lisäksi on toteutettu  yksi testi
+
+## Viikko 4
+
+- Ristinolla-peli on toteutettu siten, että sen pelaaminen onnistuu
+- Koodia jaettu erillisiin tiedostoihin

@@ -20,11 +20,11 @@ Sovellukseen tulee noin neljä näkymää: yksi käyttäjätunnuksen luomiselle,
 - Tunnuksen luotuaan käyttäjä voi kirjautua sovellukseen 
 - Kirjauduttuaan sisään käyttäjälle näkyy näkymä, josta voi aloittaa pelin
 
-### Ristinollan pelaaminen
+### Ristinollan pelaaminen (tehty)
 
-- Peliä pelatessa käyttäjälle näkyy 3x3 ruudukko
-- Ruudukkoon merkataan vuorotellen X ja O
-- Peli päättyy kun saadaan kolmen rivi joko merkkiä X tai O
+- Peliä pelatessa käyttäjälle näkyy 3x3 ruudukko **(tehty)**
+- Ruudukkoon merkataan vuorotellen X ja O **(tehty)**
+- Peli päättyy kun saadaan kolmen rivi joko merkkiä X tai O **(tehty)**
 
 ## Jatkokehitysideoita
 

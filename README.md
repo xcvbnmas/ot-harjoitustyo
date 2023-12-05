@@ -18,6 +18,7 @@ Sovellus on tarkoitettu yksinkertaisen ristinolla-pelin pelaamiseen.
 
 ## Ohjeet
 
+- Riippuvuuksien asennus: poetry install
 - Ohjelman käynnistys: poetry run invoke start
 - Ohjelman testaus: poetry run invoke test
 - Testikattavuusraportti: poetry run invoke coverage-report

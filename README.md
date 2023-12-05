@@ -6,6 +6,7 @@ Sovellus on tarkoitettu yksinkertaisen ristinolla-pelin pelaamiseen.
 
 
 
+[Release viikko 5](https://github.com/xcvbnmas/ot-harjoitustyo/releases/tag/viikko5)
 
 [Vaatimusmäärittely](https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
@@ -16,6 +17,7 @@ Sovellus on tarkoitettu yksinkertaisen ristinolla-pelin pelaamiseen.
 [Arkkitehtuurikuvaus](https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 
+
 ## Ohjeet
 
 - Riippuvuuksien asennus: poetry install
@@ -23,3 +25,5 @@ Sovellus on tarkoitettu yksinkertaisen ristinolla-pelin pelaamiseen.
 - Ohjelman testaus: poetry run invoke test
 - Testikattavuusraportti: poetry run invoke coverage-report
 - Pylint-tarkistukset: poetry run invoke lint
+
+

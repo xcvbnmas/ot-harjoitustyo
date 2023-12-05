@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import messagebox
-from game import TicTacToeGame
 
 class TicTacToeGrid(tk.Tk):
     def __init__(self, game):
@@ -9,7 +8,7 @@ class TicTacToeGrid(tk.Tk):
         self.create_grid()
         self.game = game
         self.resizable(False, False)
-                
+
     def create_grid(self):
         self.buttons = []
         for i in range(3):
@@ -23,7 +22,7 @@ class TicTacToeGrid(tk.Tk):
         for i in range(3):
             self.grid_rowconfigure(i, weight=1)
             self.grid_columnconfigure(i, weight=1)
-            
+
     def click_button(self, i, j):
         if self.game.play(i, j):
             self.buttons[i][j].config(text=self.game.current, state='disabled')
@@ -37,7 +36,6 @@ class TicTacToeGrid(tk.Tk):
                 self.reset_grid()
             else:
                 self.game.switch_player()
-	        
     def reset_grid(self):
         for i in range(3):
             for j in range(3):

@@ -10,5 +10,5 @@
 
 ## Viikko 5
 
-- Käyttäjäksi rekisteröimisen ja kirjautumisen toteutusta aloitettu
+- Käyttäjäksi rekisteröimisen ja kirjautumisen toteutusta aloitettu (ei vielä valmis)
 - Lisätty testejä

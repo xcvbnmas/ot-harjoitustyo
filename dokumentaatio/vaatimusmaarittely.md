@@ -16,8 +16,8 @@ Sovellukseen tulee noin neljä näkymää: yksi käyttäjätunnuksen luomiselle,
 
 ### Kirjautuminen
 
-- Käyttäjä voi luoda käyttäjätunnuksen
-- Tunnuksen luotuaan käyttäjä voi kirjautua sovellukseen 
+- Käyttäjä voi luoda käyttäjätunnuksen **(aloitettu)**
+- Tunnuksen luotuaan käyttäjä voi kirjautua sovellukseen **(aloitettu)**
 - Kirjauduttuaan sisään käyttäjälle näkyy näkymä, josta voi aloittaa pelin
 
 ### Ristinollan pelaaminen (tehty)

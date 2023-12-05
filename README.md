@@ -14,3 +14,11 @@ Sovellus on tarkoitettu yksinkertaisen ristinolla-pelin pelaamiseen.
 [Changelog](https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
 [Arkkitehtuurikuvaus](https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+
+## Ohjeet
+
+- Ohjelman käynnistys: poetry run invoke start
+- Ohjelman testaus: poetry run invoke test
+- Testikattavuusraportti: poetry run invoke coverage-report
+- Pylint-tarkistukset: poetry run invoke lint

@@ -16,8 +16,8 @@ Sovellukseen tulee noin neljä näkymää: yksi käyttäjätunnuksen luomiselle,
 
 ### Kirjautuminen
 
-- Käyttäjä voi luoda käyttäjätunnuksen **(tehty)**
-- Tunnuksen luotuaan käyttäjä voi kirjautua sovellukseen **(tehty)**
+- Käyttäjä voi luoda käyttäjätunnuksen **(tehty, tosin tarkoitus vielä eriyttää sovelluslogiikkaa käyttöliittymästä ja parantaa käyttöliittymää)**
+- Tunnuksen luotuaan käyttäjä voi kirjautua sovellukseen **(tehty, sama kuin yllä)**
 - Kirjauduttuaan sisään käyttäjälle näkyy näkymä, josta voi aloittaa pelin **(tehty osittain)**
 - Käyttäjä voi kirjautua ulos
 

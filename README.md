@@ -6,7 +6,7 @@ Sovellus on tarkoitettu yksinkertaisen ristinolla-pelin pelaamiseen.
 
 
 
-[Release viikko 5](https://github.com/xcvbnmas/ot-harjoitustyo/releases/tag/viikko5)
+[Release viikko 6](https://github.com/xcvbnmas/ot-harjoitustyo/releases/tag/viikko6)
 
 [Vaatimusmäärittely](https://github.com/xcvbnmas/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 

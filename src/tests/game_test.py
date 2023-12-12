@@ -29,3 +29,20 @@ class TestTicTacToeGame(unittest.TestCase):
         self.assertTrue(result)
         self.assertEqual(self.game.current, 'X')
         self.assertEqual(self.game.grid[0], 'X')
+
+    def test_winner(self):
+        self.game.grid = ['X', 'X', 'X', ' ', 'O', 'O', ' ', ' ', ' ']
+        result = self.game.winner()
+        self.assertTrue(result)
+
+        self.game.grid = ['X', 'O', ' ', 'X', 'O', ' ', 'X', ' ', ' ']
+        result = self.game.winner()
+        self.assertTrue(result)
+
+        self.game.grid = ['O', 'X', ' ', 'X', 'O', ' ', ' ', ' ', 'O']
+        result = self.game.winner()
+        self.assertTrue(result)
+
+        self.game.grid = ['X', 'O', 'X', 'X', 'O', 'O', 'O', 'X', 'X']
+        result = self.game.winner()
+        self.assertFalse(result)

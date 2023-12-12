@@ -3,6 +3,8 @@ from tkinter import ttk, constants, messagebox
 import sqlite3
 
 class LoginView:
+    """Luokka, joka vastaa käyttäjän kirjautumisen näkymästä"""
+
     def __init__(self, root, show_register_view, start_game):
         self.root = root
         self.show_register_view = show_register_view
@@ -11,6 +13,8 @@ class LoginView:
         self.initialize()
 
     def initialize(self):
+        """Luo näkymän sisäänkirjautumiselle"""
+
         self.username_label = tk.Label(self.root, text="Username:")
         self.username_label.pack()
 
@@ -33,6 +37,11 @@ class LoginView:
         self.frame.pack(fill=constants.X)
 
     def login(self):
+        """Kirjaa käyttäjän sisään, tai näyttää virheviestin käyttäjälle,
+        joka yrittää kirjautua olemattomalla käyttäjätunnuksella/salasanalla
+
+        """
+
         username = self.username_entry.get()
         password = self.password_entry.get()
 

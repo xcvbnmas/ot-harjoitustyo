@@ -3,6 +3,8 @@ from tkinter import ttk, messagebox, constants
 import sqlite3
 
 class RegisterView:
+    """Luokka, joka vastaa uuden käyttäjän rekisteröitymisestä eli uuden käyttäjän luomisesta"""
+
     def __init__(self, root, show_login_view):
         self.root = root
         self.show_login_view = show_login_view
@@ -10,6 +12,8 @@ class RegisterView:
         self.initialize()
 
     def initialize(self):
+        """Luo näkymän rekisteröitymiselle"""
+
         self.username_label = tk.Label(self.root, text="Username:")
         self.username_label.pack()
 
@@ -32,6 +36,11 @@ class RegisterView:
         self.frame.pack(fill=constants.X)
 
     def register(self):
+        """Lisää uuden käyttäjän tietokantaan, tai näyttää virheviestin käyttäjälle,
+        joka yrittää rekisteröityä jo olemassa olevalla käyttäjätunnuksella
+
+        """
+
         username = self.username_entry.get()
         password = self.password_entry.get()
 

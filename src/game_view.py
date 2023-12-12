@@ -2,7 +2,15 @@ import tkinter as tk
 from tkinter import messagebox
 
 class TicTacToeGrid(tk.Tk):
+    """Luokka, joka vastaa ristinolla-pelin näkymästä"""
+
     def __init__(self, game):
+        """Luokan konstruktori, joka luo pelin näkymän
+
+        Args:
+            game: vastaa pelin toiminnasta
+
+        """
         super().__init__()
         self.title("Ristinolla")
         self.create_grid()
@@ -10,6 +18,8 @@ class TicTacToeGrid(tk.Tk):
         self.resizable(False, False)
 
     def create_grid(self):
+        """Metodi, jonka avulla ruudukko luodaan"""
+
         self.buttons = []
         for i in range(3):
             row = []
@@ -24,6 +34,12 @@ class TicTacToeGrid(tk.Tk):
             self.grid_columnconfigure(i, weight=1)
 
     def click_button(self, i, j):
+        """Metodi, joka vastaa ruutuun merkitsemisestä/napin painamisesta
+        ja siitä seuraavasta vuoron vaihdosta tai viestistä
+        
+        Args:
+            i, j: ruudun koordinaatit
+        """
         if self.game.play(i, j):
             self.buttons[i][j].config(text=self.game.current, state='disabled')
             if self.game.winner():
@@ -36,7 +52,10 @@ class TicTacToeGrid(tk.Tk):
                 self.reset_grid()
             else:
                 self.game.switch_player()
+
     def reset_grid(self):
+        """Metodi, jonka avulla ruudukko luodaan uudestaan uutta peliä varten"""
+
         for i in range(3):
             for j in range(3):
                 self.buttons[i][j].config(text=' ', state='normal')

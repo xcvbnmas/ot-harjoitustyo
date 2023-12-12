@@ -6,12 +6,21 @@ from game_view import TicTacToeGrid
 from game import TicTacToeGame
 
 class UI:
+    """Luokka, joka vastaa käyttöliittymästä"""
+
     def __init__(self, root):
+        """Luokan konstruktori, joka alustaa käyttöliittymän
+
+        Args:
+            root: juurikomponentti
+        """
         self.root = root
         self.current_view = None
         self.initialize_ui()
 
     def initialize_ui(self):
+        """Metodi, jonka avulla käyttöliittymä käynnistetään"""
+
         self.root.title("Ristinolla")
         initialize_database()
         self.show_login_view()

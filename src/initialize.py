@@ -1,6 +1,8 @@
 import sqlite3
 
 def initialize_database():
+    """Metodi, joka luo tietokantataulun käyttäjille"""
+
     conn = sqlite3.connect("users.db")
     cursor = conn.cursor()
     

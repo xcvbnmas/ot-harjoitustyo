@@ -10,5 +10,10 @@
 
 ## Viikko 5
 
-- Käyttäjäksi rekisteröimisen ja kirjautumisen toteutusta aloitettu (ei vielä valmis)
+- Käyttäjäksi rekisteröimisen ja kirjautumisen toteutusta aloitettu
 - Lisätty testejä
+
+## Viikko 6
+
+- Toteutettu alustava käyttäjäksi rekisteröityminen ja sisäänkirjautuminen
+- Lisätty testejä TicTacToeGame-luokan testaamiseen

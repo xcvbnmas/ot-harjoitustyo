@@ -55,10 +55,9 @@ class LoginView:
 
         if user:
             messagebox.showinfo("Success", "Login successful")
+            self.start_game()
         else:
             messagebox.showerror("Error", "Invalid username or password")
-        
-        self.start_game()
 
     def show_register_view(self):
         self.show_register_view()

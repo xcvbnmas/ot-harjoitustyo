@@ -17,3 +17,7 @@
 
 - Toteutettu alustava käyttäjäksi rekisteröityminen ja sisäänkirjautuminen
 - Lisätty testejä TicTacToeGame-luokan testaamiseen
+
+## Viikko 7
+
+- Muutettu sovelluksen rakennetta

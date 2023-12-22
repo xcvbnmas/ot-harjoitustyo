@@ -29,7 +29,7 @@ class TicTacToeGrid(tk.Tk):
                 row.append(button)
             self.buttons.append(row)
 
-        exit_game_button = tk.Button(self, text="Lopeta peli", command=self.exit_game)
+        exit_game_button = tk.Button(self, text="Exit game", command=self.exit_game)
         exit_game_button.grid(row=3, column=1, sticky='nsew')
 
         for i in range(3):

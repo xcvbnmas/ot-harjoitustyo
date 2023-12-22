@@ -9,9 +9,8 @@ class TicTacToeGame:
 
     def play(self, i, j):
         """ Merkkaa ruutuun (i,j) joko merkin X tai O
-
         Args:
-            i ja j: koordinaatit
+            i ja j: ruudun koordinaatit
         """
         if self.grid[i * 3 + j] == ' ':
             self.grid[i * 3 + j] = self.current

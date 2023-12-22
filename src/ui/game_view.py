@@ -6,7 +6,6 @@ class TicTacToeGrid(tk.Tk):
 
     def __init__(self, game):
         """Luokan konstruktori, joka luo pelin näkymän
-
         Args:
             game: vastaa pelin toiminnasta
 
@@ -24,10 +23,14 @@ class TicTacToeGrid(tk.Tk):
         for i in range(3):
             row = []
             for j in range(3):
-                button = tk.Button(self, font=('Arial', 20), width=10, height=5, command=lambda i=i, j=j: self.click_button(i, j))
+                button = tk.Button(self, font=('Arial', 20), width=10, height=5, 
+                                   command=lambda i=i, j=j: self.click_button(i, j))
                 button.grid(row=i, column=j, sticky='nsew')
                 row.append(button)
             self.buttons.append(row)
+
+        exit_game_button = tk.Button(self, text="Lopeta peli", command=self.exit_game)
+        exit_game_button.grid(row=3, column=1, sticky='nsew')
 
         for i in range(3):
             self.grid_rowconfigure(i, weight=1)
@@ -59,3 +62,7 @@ class TicTacToeGrid(tk.Tk):
         for i in range(3):
             for j in range(3):
                 self.buttons[i][j].config(text=' ', state='normal')
+
+    def exit_game(self):
+        """Metodi, joka sulkee pelin näkymän"""
+        self.destroy()

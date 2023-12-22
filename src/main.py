@@ -1,9 +1,10 @@
 import tkinter as tk
 from initialize import initialize_database
-from login_view import LoginView
-from register_view import RegisterView
-from game_view import TicTacToeGrid
+from ui.login_view import LoginView
+from ui.register_view import RegisterView
+from ui.game_view import TicTacToeGrid
 from game import TicTacToeGame
+from services.service import UserService
 
 class UI:
     """Luokka, joka vastaa käyttöliittymästä"""
@@ -16,6 +17,7 @@ class UI:
         """
         self.root = root
         self.current_view = None
+        self.user_service = UserService()
         self.initialize_ui()
 
     def initialize_ui(self):
@@ -55,7 +57,7 @@ class UI:
 
     def start_game(self):
         self.hide_current_view()
-        game = TicTacToeGame()  
+        game = TicTacToeGame()
         self.current_view = TicTacToeGrid(game)
 
 if __name__ == "__main__":

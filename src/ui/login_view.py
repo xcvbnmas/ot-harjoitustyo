@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, constants, messagebox
-import sqlite3
+from services.service import UserService
 
 class LoginView:
     """Luokka, joka vastaa käyttäjän kirjautumisen näkymästä"""
@@ -10,6 +10,7 @@ class LoginView:
         self.show_register_view = show_register_view
         self.start_game = start_game
         self.frame = ttk.Frame(master=self.root)
+        self.user_service = UserService()
         self.initialize()
 
     def initialize(self):
@@ -30,7 +31,8 @@ class LoginView:
         self.login_button = tk.Button(self.root, text="Login", command=self.login)
         self.login_button.pack()
 
-        self.register_button = tk.Button(self.root, text="Register", command=self.show_register_view)
+        self.register_button = tk.Button(self.root, text="Register",
+                                         command=self.show_register_view)
         self.register_button.pack()
 
     def pack(self):
@@ -45,13 +47,7 @@ class LoginView:
         username = self.username_entry.get()
         password = self.password_entry.get()
 
-        connection = sqlite3.connect("users.db")
-        cursor = connection.cursor()
-
-        cursor.execute("SELECT * FROM users WHERE username=? AND password=?", (username, password))
-        user = cursor.fetchone()
-
-        connection.close()
+        user = self.user_service.login(username, password)
 
         if user:
             messagebox.showinfo("Success", "Login successful")

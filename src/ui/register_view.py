@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, constants
-import sqlite3
+from repositories.user_repository import UserRepository
 
 class RegisterView:
     """Luokka, joka vastaa uuden käyttäjän rekisteröitymisestä eli uuden käyttäjän luomisesta"""
@@ -9,6 +9,7 @@ class RegisterView:
         self.root = root
         self.show_login_view = show_login_view
         self.frame = ttk.Frame(master=self.root)
+        self.user_repository = UserRepository()
         self.initialize()
 
     def initialize(self):
@@ -40,22 +41,15 @@ class RegisterView:
         joka yrittää rekisteröityä jo olemassa olevalla käyttäjätunnuksella
 
         """
-
         username = self.username_entry.get()
         password = self.password_entry.get()
 
-        connection = sqlite3.connect("users.db")
-        cursor = connection.cursor()
-
-        cursor.execute("SELECT * FROM users WHERE username=?", (username,))
-        existing_user = cursor.fetchone()
+        existing_user = self.user_repository.find_user_by_username(username)
 
         if existing_user:
             messagebox.showerror("Error", "Username already taken")
         else:
-            cursor.execute("INSERT INTO users (username, password) VALUES (?, ?)", (username, password))
-            connection.commit()
-            connection.close()
+            self.user_repository.create_user(username, password)
             messagebox.showinfo("Success", "Registration successful")
 
     def show_login_view(self):

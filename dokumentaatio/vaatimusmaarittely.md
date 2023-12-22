@@ -10,22 +10,23 @@ Sovelluksessa ei ole erilaisia käyttäjärooleja.
 
 ## Käyttöliittymä
 
-Sovellukseen tulee noin neljä näkymää: yksi käyttäjätunnuksen luomiselle, yksi kirjautumiselle, yksi näkymä, josta voi aloittaa pelin sekä näkymä itse ristinollan pelaamiselle.
+Sovelluksessa on kolme näkymää: yksi käyttäjätunnuksen luomiselle, yksi kirjautumiselle sekä näkymä itse ristinollan pelaamiselle.
 
 ## Toiminnallisuus
 
 ### Kirjautuminen
 
-- Käyttäjä voi luoda käyttäjätunnuksen **(tehty, tosin tarkoitus vielä eriyttää sovelluslogiikkaa käyttöliittymästä ja parantaa käyttöliittymää)**
-- Tunnuksen luotuaan käyttäjä voi kirjautua sovellukseen **(tehty, sama kuin yllä)**
-- Kirjauduttuaan sisään käyttäjälle näkyy näkymä, josta voi aloittaa pelin **(tehty osittain)**
-- Käyttäjä voi kirjautua ulos
+- Käyttäjä voi luoda käyttäjätunnuksen
+- Tunnuksen luotuaan käyttäjä voi kirjautua sovellukseen
+- Kirjauduttuaan sisään käyttäjälle näkyy näkymä, josta voi aloittaa pelin
 
-### Ristinollan pelaaminen (tehty)
+### Ristinollan pelaaminen
 
-- Peliä pelatessa käyttäjälle näkyy 3x3 ruudukko **(tehty)**
-- Ruudukkoon merkataan vuorotellen X ja O **(tehty)**
-- Peli päättyy kun saadaan kolmen rivi joko merkkiä X tai O **(tehty)**
+- Peliä pelatessa käyttäjälle näkyy 3x3 ruudukko
+- Ruudukkoon merkataan vuorotellen X ja O
+- Peli päättyy kun saadaan kolmen rivi joko merkkiä X tai O
+- Pelin päätyttyä uusi peli alkaa automaattisesti
+- Pelinäkymässä on painike, josta voi lopettaa pelin
 
 ## Jatkokehitysideoita
 
